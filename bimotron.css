@@ -1,0 +1,125 @@
+
+:root{
+    --color1:white;
+    --color2:#555555;
+    --color3:#55555560;
+    --color4:#08202b;
+    --color5:#ff6c45;
+}
+body{
+    margin: 0;
+    font-family: "verdana", sans-serif;
+    /*font-family: "Tahoma", sans-serif;*/
+    /*font-family: "Trebuchet MS", sans-serif;*/
+}
+
+img.logo{
+    width: 160px;
+    position: relative;                
+    left: 5%; 
+    top: 15px;               
+}
+div.cover{
+    height: 500px;
+    background: url("Banniere-principale-web.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;       
+}
+div.menu {
+    width: 30px;
+    height: 5px;
+    background-color:var(--color2);
+    margin: 5px 0;
+}
+div.header-liens{
+    float: right;
+    margin-top: 30px;
+    margin-right: 25px;
+} 
+div.cover a{
+    text-align: center;      
+}
+div.cover2{
+    height: 600px;
+    background: url("splash_web.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;       
+}
+a.bouton-contact{                           
+    color: var(--color2); 
+    border: solid 1px var(--color2);
+    border-radius: 0px;
+    padding: 5px 10px;            
+    text-decoration: none;
+    display: inline-block;
+} 
+a.bouton-contact:hover{
+    color: var(--color1);
+    background-color: var(--color3);
+    border: solid 1px var(--color1);            
+}
+a.bouton-services{
+    /*position: relative;*/                         
+    color: var(--color1); 
+    background-color: var(--color5);
+    border-radius: 22px;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-left: 5px;
+    text-transform: uppercase;            
+    text-decoration: none;
+} 
+
+h1{
+    color: var(--color4);                
+    font-size: 32px;
+    text-align: left;
+    margin: 120px 5px 50px 20px;
+}
+
+/* ecran ordinateur */
+@media only screen and (max-width: 450px) {
+    div.header-liens{
+        display: none;
+    }
+    } 
+    @media only screen and (min-width: 450px) {
+        .dropbtn{
+            display: none;
+        }
+        } 
+/* menu deroulant*/
+.dropbtn {   
+    padding: 0px 2.5px;
+    border: none;
+    background-color:#efefef00;
+  }  
+  .dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 25px;
+  }  
+  .dropdown-content {    
+    display: none;
+    position: absolute;
+  }  
+  .dropdown-content a {
+    color: var(--color2); 
+    border: solid 1px var(--color2);
+    border-radius: 0px;
+    padding: 5px 10px;            
+    text-decoration: none;
+    margin-top: 5px;
+  }  
+  .dropdown-content a:hover {}
+  
+  .dropdown:hover .dropdown-content {display: block;margin-left: -75px;text-align: right;}
+  
+  .dropdown:hover .dropbtn {}
+  /* menu deroulant*/
