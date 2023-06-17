@@ -5,6 +5,9 @@
     --color3:#55555560;
     --color4:#08202b;
     --color5:#ff6c45;
+    --color6:#014874;
+    --color7:#333E48;
+
 }
 body{
     margin: 0;
@@ -12,7 +15,6 @@ body{
     /*font-family: "Tahoma", sans-serif;*/
     /*font-family: "Trebuchet MS", sans-serif;*/
 }
-
 img.logo{
     width: 160px;
     position: relative;                
@@ -41,44 +43,53 @@ div.header-liens{
 div.cover a{
     text-align: center;      
 }
-div.cover2{
-    height: 600px;
-    background: url("splash_web.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;       
-}
 a.bouton-contact{                           
     color: var(--color2); 
-    border: solid 1px var(--color2);
-    border-radius: 0px;
-    padding: 5px 10px;            
+    /*border: solid 1px var(--color2);
+    border-radius: 0px;*/
+    padding: 5px 10px;        
     text-decoration: none;
     display: inline-block;
 } 
 a.bouton-contact:hover{
     color: var(--color1);
-    background-color: var(--color3);
-    border: solid 1px var(--color1);            
+    /*background-color: var(--color3);
+    border: solid 1px var(--color1); */           
 }
-a.bouton-services{
-    /*position: relative;*/                         
+h1{
+    color: var(--color4);                
+    font-size: 32px;
+    text-align: left;
+    margin: 200px 15px 35px 15px;
+}
+a.bouton-services{                        
     color: var(--color1); 
     background-color: var(--color5);
     border-radius: 22px;
     padding: 10px 20px;
     font-size: 15px;
-    margin-left: 5px;
+    margin-left: 15px;
+    margin-top: 55px;
     text-transform: uppercase;            
     text-decoration: none;
 } 
-
-h1{
-    color: var(--color4);                
-    font-size: 32px;
-    text-align: left;
-    margin: 120px 5px 50px 20px;
+div.cover2{
+    height: 600px;
+    background: url("Banniere3_web_filtre.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;       
+}
+h2{
+    text-align: center;
+    font-size: 22px;
+    color: var(--color6);
+}
+p.txt1{
+    text-align: center;
+    font-size: 19px;
+    color: var(--color7);
 }
 
 /* ecran ordinateur */
@@ -103,7 +114,7 @@ h1{
     position: relative;
     display: inline-block;
     margin-top: 25px;
-    margin-right: 25px;
+    margin-right: 20px;
   }  
   .dropdown-content {    
     display: none;
@@ -111,15 +122,15 @@ h1{
   }  
   .dropdown-content a {
     color: var(--color2); 
-    border: solid 1px var(--color2);
-    border-radius: 0px;
+    /*border: solid 1px var(--color2);
+    border-radius: 0px;*/
     padding: 5px 10px;            
     text-decoration: none;
     margin-top: 5px;
   }  
   .dropdown-content a:hover {}
   
-  .dropdown:hover .dropdown-content {display: block;margin-left: -75px;text-align: right;}
+  .dropdown:hover .dropdown-content {display: block;margin-left: -80px;text-align: right;}
   
   .dropdown:hover .dropbtn {}
   /* menu deroulant*/
