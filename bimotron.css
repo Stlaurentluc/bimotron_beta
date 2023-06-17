@@ -1,12 +1,13 @@
 
 :root{
-    --color1:white;
+    --color1:#ffffff;
     --color2:#555555;
     --color3:#55555560;
     --color4:#08202b;
     --color5:#ff6c45;
     --color6:#014874;
     --color7:#333E48;
+    --color8:#9fbac6;
 
 }
 body{
@@ -21,6 +22,7 @@ img.logo{
     left: 5%; 
     top: 15px;               
 }
+/* banniere */
 div.cover{
     height: 500px;
     background: url("Banniere-principale-web.jpg");
@@ -29,6 +31,23 @@ div.cover{
     background-repeat: no-repeat;
     background-size: cover;       
 }
+div.cover2{
+    height: 400px;
+    background: url("Banniere2_web_filtre.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;       
+}
+div.cover3{
+    height: 400px;
+    background: url("Banniere3_web_filtre.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;       
+}
+/* banniere */
 div.menu {
     width: 30px;
     height: 5px;
@@ -73,14 +92,7 @@ a.bouton-services{
     text-transform: uppercase;            
     text-decoration: none;
 } 
-div.cover2{
-    height: 600px;
-    background: url("Banniere3_web_filtre.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;       
-}
+
 h2{
     text-align: center;
     font-size: 22px;
@@ -90,6 +102,21 @@ p.txt1{
     text-align: center;
     font-size: 19px;
     color: var(--color7);
+}
+/* footer*/
+div.footer{
+    font-size: 19px;
+    text-transform: capitalize;
+    height: 400px;
+    background-color: var(--color7);
+    color: var(--color8);
+}
+.separateur{
+    width: 250px;
+    height: 1px;
+    background-color: var(--color8);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* ecran ordinateur */
