@@ -15,6 +15,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*overflow: hidden;  Hide scrollbars */
 }
 /* ----------------- Background ----------------- */
 div.bckgnd1{
@@ -117,17 +118,20 @@ a.bouton-services{
     background-color: var(--color1);
     display: flex;
     flex-direction: column;
-    color: var(--color7);  
+    color: var(--color7);
+    padding: 50px 0px;
 }
 h2{
     text-align: center;
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--color6);
+    padding: 0.1rem 1rem;
 }
 p.txt1{
     text-align: center;
     font-size: 1rem;
+    padding: .25rem 1rem;
 }
 /* ----------------- Section 2 ----------------- */
 .section2{
@@ -178,11 +182,15 @@ p.txt1{
 .avantages_items p:last-child{
     font-size: 1.25rem;
     font-weight:normal;
+    padding: .5rem 2rem;
 }
 /* ----------------- Footer ----------------- */
 div.footer{
     background-color: var(--color7);
     color: var(--color8);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
 }
 div.footer p{
     margin-left: 1rem;
@@ -197,9 +205,11 @@ div.footer p{
     display: flex;
     flex-direction: column;
     margin-left: -1.25rem;
+    margin-top: -1rem;
 }
 .footer_link li{
-    list-style: none;   
+    list-style: none;
+    padding-top: 0.25rem;  
 }
 .footer_link li a{
     text-decoration: none;
@@ -210,7 +220,6 @@ div.footer p{
     color: var(--color5);
 }
 .footer_coordonne{
-    margin-bottom: .25rem;
     display: flex;
     flex-direction: column;
 }
@@ -218,21 +227,30 @@ div.footer p{
     text-decoration: none;
     color: var(--color1);
     margin-left: 1rem;
+    padding-top: .5rem;
+}
+
+.footer_coordonne a:hover{
+    color: var(--color5);
+}
+a.icons{
+    margin-left: 1rem;
+    padding-top: 1rem;
+    width: 30px;
+}
+a.icons img{
+    height: 30px;
 }
 .separateur{
-    width: 250px;
+    width: 100%;
     height: 1px;
     background-color: var(--color8);
-    margin-left: 15px;
-    margin-right: auto;
+    margin-top: 1rem;
 }
+
 /* ----------------- Computer ----------------- */
 @media only screen and (min-width: 450px) {
     .navbar_img{width: 300px;}
-    div.footer_menu{
-        flex-direction: row;
-        justify-content: space-between;
-    }
     .services_items{flex-direction: row;}
     .avantages{
         flex-direction: row;
@@ -240,6 +258,52 @@ div.footer p{
     }
     .avantages_items{
         width: z;
+    }
+    a.bouton-services{                    
+        width: 250px;
+    }
+    p.txt1{
+        padding: 0px 250px;
+    }
+    /* ----------------- Section 2 ----------------- */
+    .services{
+        flex-direction: row;
+        justify-content: space-between;        
+    }
+    .services_items{
+        font-size: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        margin: .5rem 5rem;       
+    }
+       /* ----------------- Section 3 ----------------- */
+       .avantages{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;   
+    }
+    .avantages_items p:last-child{
+        padding: 0rem 1.5rem;
+    }
+       /* ----------------- footer ----------------- */
+       div.footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer_menu{
+        padding-left: 3rem;
+    }
+    .footer_coordonne{
+        padding-left: 6rem;
+    }
+    a.icons{
+        padding-top: 1rem;
+    }
+    div.reference p{
+        margin-right: 1rem;
+    }
+    .separateur{
+        display: none;
     }
 }
 /* ----------------- Mobile ----------------- */
