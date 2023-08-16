@@ -26,7 +26,7 @@ h2{font-size: 1.5rem;}
 /*----------------------------  Intro DEBUT ----------------------------*/
 .intro{
     height: 100vh;
-    background: url("images_bimotron2024/Banniere_intro.jpg");
+    background: url("Banniere_intro.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
