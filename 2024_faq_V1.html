@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="bimotron_icon.ico">
+    <link rel="stylesheet" href="2024_bimotron_V1.css">
+    <title>bimotron|Architecture Numérique</title>
+</head>
+<body>
+    <div class="pagecomplete">
+        <div class="intro introfaq" id="intro">
+            <header>
+                <div class="topnav">
+                    <img class="logo_entete" src="bimotron_logo.png" alt="">
+                    <div class="entete">
+                        <div class="burger" onclick="myFunction(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                        <div id="menu" class="dropdown_menu">
+                            <a href="index2024_bimotron_V1.html">Accueil</a>
+                            <a href="2024_scan3D_V1.html">Relevé par numérisation 3D</a>
+                            <a href="2024_faq_V1.html">FAQ</a>
+                            <a href="mailto:l.stlaurent@bimotron.com?subject=Contact%20pour%20infos">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <script>
+                function myFunction(x) {
+                    x.classList.toggle("change");
+                    document.getElementById("menu").classList.toggle("show");}    
+            </script>
+            <div class="texte_intro">
+                <h1>Foire aux questions</h1>
+            </div> 
+        </div>
+<!--        -----------------------------------------------------------------       -->
+        <div class="transitions transitionsfaq" id="trans">
+            <h2>Quelle est la précision des relevés ?</h2>
+            <p>L’appareil utilisé a une précision de 6 millimètres sur une distance de 10 mètres.</p>
+            <h2>Les relevés extérieurs peuvent-ils se faire en tout temps ?</h2>
+            <p>La température extérieure doit se situer entre 
+                5 et 40 degrés Celsius et le temps doit être dégagé.</p>
+            <h2>Quel est le type de laser utilisé ?</h2>
+            <p>Le laser utilisé est de classe 1 selon la nome EC 60825-1:2014 
+                - Sécurité des appareils à laser - Partie 1: Classification des matériels 
+                et exigences.</p>
+            <h2>Le laser 3D peut-il donner les compositions intérieures des murs ?</h2>
+            <p>Les faisceaux lasers ne traversent pas les objects et surfaces 
+                présents dans la pièce. La composition ne peut donc pas être connue 
+                avec l’appareil.</p>
+        </div>
+<!--        -----------------------------------------------------------------       -->
+        <div class="outro" id="outro">
+            <div class="footer_menu">
+                <h2>menu</h2>
+                <div class="footer_link">
+                    <a href="index2024_bimotron_V1.html">Accueil</a>
+                    <a href="2024_scan3D_V1.html">Relevé par numérisation 3D</a>
+                    <a href="2024_faq_V1.html">FAQ</a>
+                    <a href="mailto:l.stlaurent@bimotron.com?subject=Contact%20pour%20infos">Contact</a>              
+                </div>
+            </div>
+            <div class="footer_coordonne">
+                <h2>coordonnées</h2>
+                <a href="mailto:l.stlaurent@bimotron.com?subject=Contact%20pour%20infos">l.stlaurent@bimotron.com</a>
+                <a href="tel:+15148161203">514 816 1203</a>            
+                <a class="icons" href="https://www.linkedin.com/in/luc-st-laurent-0509437a/">
+                <img src="linkedin-64.png"></a>
+            </div>
+            <div class="ligne"></div>
+            <p>© 2023 bimotron architecture numérique inc.</p>
+        </div>
+    </div>
+</body>
+</html>

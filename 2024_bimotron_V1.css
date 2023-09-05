@@ -1,0 +1,447 @@
+:root{
+    --color1:#FFFFFF;
+    --color2:#EFEFEF;
+    --color3:#F54C01;
+    --color4:#D1D3D3;
+    --color5:#9FBAC6;
+    --color6:#014876;
+    --color7:#333E48;
+    --color8:#08202A;
+}
+*{margin: 0;padding: 0;}
+*{scroll-behavior: smooth;}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color6);
+}
+
+h1{font-size: 2.25rem;}
+h2{font-size: 1.75rem;}
+h3{font-size: 1.25rem;}
+p{font-size: 1rem;}
+/*----------------------------  generale ----------------------------*/
+.pagecomplete {
+    height: 100svh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;      
+}
+/*----------------------------  Intro DEBUT ----------------------------*/
+.intro{
+    height: 100svh;
+    background: url("bimotron_intro_ban.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.introscan{
+    height: 100svh;
+    background: url("bimotron_scan_ban.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.introfaq{
+    height: 100svh;
+    background: url("bimotron_faq_ban.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*----------------------------  burger ----------------------------*/
+.burger {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: .5rem;
+    margin-top: .25rem;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--color7);
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+.change .bar1 {transform: translate(0, 11px) rotate(-45deg);background-color: var(--color3);}    
+.change .bar2 {opacity: 0;}    
+.change .bar3 {transform: translate(0, -11px) rotate(45deg);background-color: var(--color3);}
+/*----------------------------  Burger ----------------------------*/
+/*----------------------------  TopNav ----------------------------*/
+.topnav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo_entete{
+    height: 60px;
+    margin: 1rem;
+}
+.entete{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    margin-top: 3rem;
+    margin-right: 1rem;
+}
+/*----------------------------  TopNav ----------------------------*/
+/*----------------------------  Dropdown menu ----------------------------*/
+.dropdown_menu {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    margin-top: 2rem;
+}
+.dropdown_menu a{ 
+    text-align: right;   
+    text-decoration: none;
+    padding: .5rem 0;
+    color:var(--color7);
+}
+a:hover{
+    color:var(--color3);}
+.show {opacity: 100;}
+
+.texte_intro{
+    display: flex;
+    flex-direction: column;
+    vertical-align: bottom;
+}
+.texte_intro h1{padding: 1.5rem;}
+.texte_intro p{
+    color: var(--color7);
+    padding: 1.5rem;
+}
+.lien{
+    width: auto;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+a.bouton-services{                        
+    color: var(--color1); 
+    background-color: var(--color3);
+    border-radius: 22px;
+    padding: 10px 20px;
+    text-align: center;
+    width: 90%;            
+    text-decoration: none;
+}
+/*----------------------------  Dropdown menu ----------------------------*/
+/*----------------------------  Intro FIN ----------------------------*/
+/*----------------------------  transitions debut ----------------------------*/
+.transitions{
+    height: 50svh;
+    background-color:yellowgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.transitions h2{
+    text-align: center;
+}
+.transitions p{
+    text-align: center;
+    margin: 1.25rem .5rem;
+}
+.transitions img{
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+/*----------------------------  transition_1 fin ----------------------------*/
+/*----------------------------  sections debut ----------------------------*/
+.sections{
+    position: relative;
+    height: 100svh;
+    transform-style: preserve-3d;
+}
+.sections375{
+    height: 375svh;
+}
+.sections250{
+    height: 250svh;
+}
+.sections200{
+    height: 150svh;
+}
+.section2{
+    height: 100svh;
+}
+.sections h1, h2{
+    text-align: center;
+}
+.mid_layer h3{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.equip_applic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.equip_applic img{
+    max-width: 320px;
+    height: auto;
+    border-radius: 35px;
+    margin-top: 2rem;
+}
+.equip_applic h3, p{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.equipement, .applications, .num_lien_txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.num_lien_txt h1{
+    text-align: center;
+}
+.liste{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.layer{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.base_layer{
+    /*scale calculation: 1+((Z transform value * -1)/ perspective)*/
+    transform: translateZ(-300px) scale(2);
+}
+.mid_layer{
+    /*scale calculation: 1+((Z transform value * -1)/ perspective)*/
+    transform: translateZ(0px);
+    display: flex;
+    flex-direction: column;
+}
+.top_layer{
+    transform: translateZ(210px) scale(0.3);
+}
+.infos, .etapes{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.infos h3, p{
+    text-align: center;
+    color: var(--color6);
+}
+.video{
+    max-width: fit-content;
+    margin-top: 1rem;
+    margin-bottom: rem;
+}
+.etapes h4{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+/*----------------------------  sections fin ----------------------------*/
+/*----------------------------  services debut ----------------------------*/
+.services{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services img{
+    max-width: 320px;
+    height: auto;
+    border-radius: 35px;
+    margin-top: 2rem;
+}
+.services p {
+    text-align: center;
+    padding: 0.5rem;
+}
+a.bouton{                        
+    color: var(--color1); 
+    background-color: var(--color3);
+    border-radius: 22px;
+    padding: 10px 20px;
+    text-align: center;
+    width: 8rem;            
+    text-decoration: none;
+}
+.laser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*----------------------------  services fin ----------------------------*/
+.avantages, .avantages_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;   
+}
+.avantages_items p:last-child{
+    font-weight:normal;
+    padding: .5rem 2rem;
+}
+/*----------------------------  Outro Debut ----------------------------*/
+.outro{
+    height: 100vh;
+    background-color: var(--color8);
+    display: flex;
+    flex-direction: column;
+    /*justify-content: flex-end;*/
+}
+.outro .ligne{
+    width: 100%;
+    height: 1px;
+    background-color: var(--color5);
+}
+.outro p{
+    font-size: .75rem;
+    color: var(--color5);
+    text-align: center;
+    margin-bottom: .5rem;
+}
+.outro h2{
+    text-decoration: underline;
+    color: var(--color7);
+    text-align: left;
+    margin-left: .75rem;
+}
+.outro a{
+    text-decoration: none;
+    color: var(--color5);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    text-align: left;
+}
+.outro a:hover{color: var(--color3);}
+.footer_menu{
+    display: flex;
+    flex-direction: column;
+}
+.footer_link {    
+    display: flex;
+    flex-direction: column;
+}
+.footer_coordonne{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.footer_coordonne img{
+    height: 30px;
+    padding-bottom: 2rem;
+}
+
+/*----------------------------  Outro Fin ----------------------------*/
+/*----------------------------  adaptation Computer ----------------------------*/
+@media only screen and (min-width: 450px){
+    .topnav{margin-bottom: 200px;}
+    .burger{opacity: 0;}
+    .entete{flex-direction: row;
+        align-items: center;
+        margin-top: 0;}
+    .dropdown_menu {
+        flex-direction: row;
+        justify-content: space-between; 
+        padding-right: 3rem;
+        width: 90%;
+        opacity: 100;
+    }
+    .logo_entete{
+        height: 100px;
+        margin: .75rem;
+    }
+    .texte_intro{margin: 110px;}
+    .outro p{text-align: right;}
+    .sections{height: 75vh;}
+    .sections200{height: 110vh;}
+    .sections250{height: 130vh;}
+    .sections375{height: 150vh;}
+    .transitions{height: 40vh;}
+
+    .services{
+        flex-direction: row;
+        margin-top: 3rem;
+    }
+    .services2{margin-top: 4rem;}
+    .services3{margin-top: 8rem;}
+    .services img{
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 2rem;
+        max-width: 415px;
+        height: auto;
+        border-radius: 35px;       
+    }
+    .transitions p, h2, h3{
+        text-align: left;
+    }
+    .avantages{
+        flex-direction: row;  
+    }
+    .etapes{max-width: 40%;}
+    .etapes_items{
+        margin-bottom: 1.5rem;
+    }
+    .transitionsfaq{
+        padding: 3rem;
+        height: auto;
+    }
+}
+/*----------------------------  adaptation Computer ----------------------------*/
+
+.base_layer{
+    /*scale calculation: 1+((Z transform value * -1)/ perspective)*/
+    transform: translateZ(-300px) scale(2);
+}
+.top_layer{transform: translateZ(210px) scale(0.3);}
+#intro{z-index: 0;}
+#section-1{z-index: -1;}
+#section-1 > .base_layer {
+    background-image: url("images/banniere_2_bin.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    height: 75svh;
+    opacity: .75;    
+}
+
+#trans{
+    z-index: 0;
+}
+#section-2{
+    z-index:-1;
+}
+#section-2 > .base_layer{
+    background-color: yellowgreen;
+    /*background-image: url("images/banniere_3_bin.png"); /* Ajoutez votre image ici */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    height: 75svh;
+    opacity: .75;
+}
+#outro{
+    z-index: -3;
+}
